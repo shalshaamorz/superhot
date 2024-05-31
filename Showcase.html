@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERHOT</title>
+    <style>
+        body {
+            font-family: 'Pacifico', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #fad3f0;
+        }
+        header {
+            background-color: #3f001e;
+            color: rgb(248, 190, 213);
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #fa51ba;
+            color: white;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: rgb(245, 166, 198);
+            margin: 0 1rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: auto;
+            padding-bottom: 100px; /* Adjust for footer space */
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .image-container img {
+            max-width: 20px;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .article {
+            background-color: rgb(253, 189, 229);
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+        .article img {
+            max-width: 23%;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+        }
+        .article h2 {
+            color: #333;
+        }
+        .footer {
+            background-color: #3f001e;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SUPERHOT SAVE THE EARTH</h1>
+    </header>
+
+    <nav>
+        <a onclick="showArticle('home')">Home</a>
+        <a onclick="showArticle('globalwarming')">Global Warming</a>
+        <a onclick="showArticle('fashion')">Fast Fashion</a>
+        <a onclick="showArticle('creatifox')">Creatifox</a>
+    </nav>
+
+    <div class="container">
+        <div id="home" class="article">
+            <h1>KENALAN YUK SAMA BOEMI!</h1>
+            <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/maskot 1.png" alt="roasted earth">
+            <p>
+                Halo teman-teman semua! 
+                <br>
+                Teman-teman semua sudah tidak asing kan dengan aku? 
+                Perkenalan aku Boemi sebagai maskot yang menggemaskan dan lucu dari kelompok SUPERHOT. 
+                Pada zaman dahulu Boemi bisa ‘dikatakan’ sangat asri, di mana Boemi merupakan planet 
+                yang sangat layak ditinggali karena kelimpahan kekayaan alam dan tidak terbatasnya oksigen 
+                untuk makhluk hidup bertahan hidup. Kini, Boemi lebih sering dirusak, dicemari, dan terus menerus 
+                diekpoitasi oleh manusia itu sendiri. Seandainya para manusia peka terhadap Boemi yang sudah mulai lelah, 
+                dan perlahan-lahan merasakan sakit. Jika terus dibiarkan seperti ini, Boemi akan segera berakhir. 
+                Boemi sayang teman-teman semua yang berada di dalam Boemi. Tapi, apakah teman-teman semua sayang dengan Boemi?
+            </p>
+            <h2>Tim Scrapbook Develop</h2>
+            <div class="image-container">
+                <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/1.png" alt="Shalsha">
+                <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/2.png" alt="Nayla">
+                <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/3.png" alt="Martha">
+                <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/4.png" alt="Atha">
+            </div>
+            <h2>Tim Short Movie</h2>
+            <div class="image-container">
+                <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/9.png" alt="Anggun">
+                <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/10.png" alt="Manda">
+                <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/11.png" alt="Umar">
+                <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/12.png" alt="Andri">
+            </div>
+            <h2>Tim Creatifox</h2>
+            <div class="image-container">
+                <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/5.png" alt="Najwa">
+                <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/6.png" alt="Dita">
+                <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/7.png" alt="Dewi">
+                <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/8.png" alt="Aufa">
+            </div>
+        </div>  
+        
+        <div id="globalwarming" class="article">
+            <h1>BUMI SEDANG DEMAM</h1>
+            <p>
+                Halo teman-teman Boemi! Teman-teman tau bukan belakangan ini suhu Boemi meningkat, 
+                Boemi sering sakit, sehingga curah hujan sering kali tidak menentu, gunung es mencair 
+                dan menyebabkan volume air laut meningkat. Teman-teman terdampak pasti sedih bukan 
+                akan semua bencana tersebut? Boemi juga. 
+                <br>
+                <br>
+                Kenaikan suhu Boemi tersebut adalah kondisi Global Warming, jika kondisi ini meningkat 
+                terus menerus maka akan menyebabkan perubahan iklim di banyak wilayah di Boemi. 
+                Global warming adalah kondisi dimana suhu permukaan bumi meningkat secara signifikan 
+                dan merata. Pada tahun 2018, IPCC mengeluarkan laporan bahwa suhu bumi meningkat sebesar 
+                1,5⁰C, pernyataan tersebut telah disetujui oleh pemerintah dunia. 
+                <br>
+            </p>
+            <img src="C:/Kuliah/Semester 4/Sains Perubahan Iklim/Showcase/Foto/Trend suhu.png" alt="trend suhu">
+            <p>
+                Bencana Global Warming yang dialami Boemi disebabkan oleh aktivitas makhluk hidup di Boemi, 
+                khususnya aktivitas manusia dalam memenuhi kebutuhannya. Aktivitas tersebut meliputi penggunaan 
+                bahan bakar fosil, penggunaan transportasi dengan energi pembakaran, produksi gas metana dari 
+                peternakan dan pertanian, aktivitas penebangan pohon, dan penggunaan pupuk kimia berlebihan.
+            </p>
+        </div>
+
+        <div id="fashion" class="article">
+            <h2>Habis Pakai Buang; Terima Kasih</h2>
+            <img src="https://via.placeholder.com/800x400" alt="Gambar Artikel 2">
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <div id="creatifox" class="article">
+            <h2>CREATIFOX SAVE THE EARTH</h2>
+            <img src="https://via.placeholder.com/800x400" alt="Gambar Artikel 3">
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 SUPERHOT ; Kelompok 5 ; Sains Perubahan Iklim</p>
+    </footer>
+
+    <script>
+        function showArticle(articleId) {
+            // Hide all articles
+            var articles = document.querySelectorAll('.article');
+            articles.forEach(function(article) {
+                article.style.display = 'none';
+            });
+
+            // Show the selected article
+            var selectedArticle = document.getElementById(articleId);
+            if (selectedArticle) {
+                selectedArticle.style.display = 'block';
+            }
+        }
+
+        // Show the home article by default
+        showArticle('home');
+    </script>
+
+</body>
+</html>
+
